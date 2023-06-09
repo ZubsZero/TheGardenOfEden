@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body {
+    background-color: black !important;
+}   
+img {
+    height: 700px !important;
+    width: 700px !important;
+}
+.navbar.navbar-dark.bg-dark.sticky-top {
+    background-color: black !important;
+    height: 90px;
+}
+.text-head {
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    text-shadow: 1px 0.1px 5px rgb(96, 243, 128);
+    font-family: 'Cardo', serif;
+    
+}
+.offcanvas.offcanvas-end.text-bg-dark {
+    background-color: black !important;
+}
+.nav-1:hover {
+    color: rgb(20, 255, 1);
+    font-weight: 500 ;
+    box-shadow: rgb(20, 255, 90) 2px 2px 9px 2px;
+    transition: 350ms all;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 14px;
+    background-color: rgb(0, 0, 0) !important ;
+    width: 90px !important
+}
+.cards {
+    position: relative;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.img-1 {
+    background-image: url(https://o.remove.bg/downloads/d97eff82-bd94-454d-90ae-b1f8e72b1df6/download-removebg-preview.png);
+}
+.card {
+    width: 22rem;
+    height: 300px !important;
+    border-radius: 20px !important;
+    margin: 0.6rem;
+    background-color: black !important;
+}
+.wrapper {
+    background-image: url(https://i.postimg.cc/c1bFmSGM/gardening-service-removebg-preview.png);
+    filter: brightness(2);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+}
+.wrapper-2 {
+    background-image: url(https://i.postimg.cc/wB2VsKkN/download-removebg-preview.png);
+    filter: brightness(4);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+}
+.wrapper-3 {
+    background-image: url(https://i.postimg.cc/66jmmZnZ/Gardening-decoration-removebg-preview.png);
+    filter: brightness(4);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+}
+.card-content {
+    color: rgb(20, 255, 1);
+    text-shadow: 1px 0.1px 5px rgb(34, 243, 79);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6px;
+    margin-top: 12rem;
+}
+@media only screen and (max-width: 300px) {
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .cards {
+        position: relative;
+        left: 21%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cards-2 {
+        position: relative;
+        left: 2%;
+        display: flex;
+        flex-direction: column !important;
+
+    }
+
+    .logo-img{
+        width: 10px !important;
+        display: none ;
+    }
+    
+    .text-head {
+        margin-top: 0px;
+    }
+
+    .btn-1 {
+        position: relative;
+        right: 13%;
+
+    }
+    .btn-3 {
+        position: relative;
+        right: 13%;
+
+    }
+    .btn-2 {
+        position: relative;
+        right: 13%;
+
+    }
+    .d-block.w-100 {
+       aspect-ratio: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .cards {
+        position: relative;
+        left: 21%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cards-2 {
+        position: relative;
+        left: 2%;
+        display: flex;
+        flex-direction: column !important;
+
+    }
+
+    .logo-img{
+        width: 10px !important;
+        display: none ;
+    }
+    
+    .text-head {
+        margin-top: 0px;
+    }
+
+    .btn-1 {
+        position: relative;
+        right: 13%;
+
+    }
+    .btn-3 {
+        position: relative;
+        right: 13%;
+
+    }
+    .btn-2 {
+        position: relative;
+        right: 13%;
+
+    }
+    .d-block.w-100 {
+       aspect-ratio: auto;
+    }
+}
+
+
+
+.heading-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(251, 251, 251);
+    text-shadow: 1px 0.1px 5px rgb(255, 255, 255);
+
+}
+
+.cards-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin: 2.5rem;
+
+
+}
+
+.card-2 {
+   background-image: url(https://i.postimg.cc/PrSmdb2X/pexels-cottonbro-studio-5561298.jpg);
+   background-position: center;
+    width: 100%;
+    height: 24rem;
+}
+.card-3 {
+    background-image: url(https://i.postimg.cc/65FpVyQV/pexels-maria-orlova-4946994.jpg);
+   background-position: center;
+    width: 100%;
+    height: 24rem;
+}
+.card-4 {
+    background-image: url(https://i.postimg.cc/BbqMVSQM/pexels-lisa-fotios-1446975.jpg);
+    background-position: center;
+    width: 100%;
+    height: 24rem;
+    overflow-y: hidden;
+}
+
+.card-content-2 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 4px 5px rgb(0, 0, 0);
+   
+
+}
+
+.card-2:hover  {
+    box-shadow: green 3px 3px 40px 10px;
+    transition: 400ms all;
+    visibility: visible;
+    transform: scale(1.1);
+  
+}
+
+.card-3:hover  {
+    box-shadow: green 3px 3px 40px 10px;
+    transition: 400ms all;
+    visibility: visible;
+    transform: scale(1.1);
+}
+.card-4:hover  {
+    box-shadow: green 3px 3px 40px 10px;
+    transition: 400ms all;
+    visibility: visible;
+    transform: scale(1.1);
+}
+
+.btn-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4rem;
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    background: black;
+    color:white
+}
+
+.btn-1:hover {
+    transition: 400ms all;
+    transform: scale(1.4);
+    background-color: transparent;
+    box-shadow: white 1px 1px 12px 4px;
+}
+.btn-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4rem;
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    background: black;
+    color:white
+}
+
+.btn-2:hover {
+    color: black;
+    transition: 400ms all;
+    transform: scale(1.4);
+    background-color: transparent;
+    box-shadow: rgb(0, 0, 0) 1px 1px 12px 4px;
+}
+
+.btn-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4rem;
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    background: black;
+    color:white;
+
+    
+}
+
+.btn-3:hover {
+    color: black;
+    transition: 400ms all;
+    transform: scale(1.4);
+    background-color: transparent;
+    box-shadow: rgb(0, 0, 0) 1px 1px 12px 4px;
+}
+
+.logo-img {
+    width: 300px !important;
+    height: 90px !important;
+}
+
+.logo {
+    display: flex;
+}
+
+.h-1 {
+    font-weight: 700;
+    background: url('https://i.postimg.cc/x8qVDK94/wallpaperflare-com-wallpaper-4-2.jpg') no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: white ;
+    display: grid;
+    margin-bottom: 13rem;
+    font-size: 5rem;
+    margin-right: 2rem;
+  
+ 
+}
+
