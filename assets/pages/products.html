@@ -22,7 +22,6 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-
 </head>
 <body>
     <header>
@@ -32,9 +31,7 @@
       <div class="logo">
         <span class="text-head">The Garden Of Eden</span></a>
       </div>
-      
     </div>
-    
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -57,8 +54,26 @@
           <li class="nav-item">
             <a class="nav-link" href="#"><span class="nav-1">Contact US</span></a>
           </li>
+          <li class="btn-cart">
+            <label for="cart">Cart</label>
+            <button type="button" class="cart" id="cart" onclick="toggle()">.</button>
           </li>
         </ul>
+        <div class="cart-container" id="cartcontainer">
+          <div class="cart-items">
+            <div class="product-img">
+              <img src="https://i.postimg.cc/c1bFmSGM/gardening-service-removebg-preview.png" alt="" class="cart-images">
+            </div>
+            <p>Large Scissor</p>
+            <p>300</p>
+            <div class="units">
+             <span>-</span>
+            <p>1</p>
+            <span>+</span>
+            </div>
+            <button type="button" class="btn btn-danger" onclick="remove()">x</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -74,23 +89,32 @@
         <div class="cards">
             <div class="card">
                 <div class="card-content">
-                    11111
+                    Gardening Tools
                 </div>
             </div>
-            <div class="card">
+            <div class="card-2">
                 <div class="card-content">
-                    11111
+                    Gardening Decor
                 </div>
             </div>
-            <div class="card">
+            <div class="card-3">
                 <div class="card-content">
-                    11111
+                    Gardening Service
                 </div>
             </div>
         </div>
     </main>
-
+    <main>
+     <div class="main">
+      <div class="cards-2">
+</div>
+      </div>
+     </div>
+    </main>
+    <script src="/assets/JS/products.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://kit.fontawesome.com/95273b878a.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
