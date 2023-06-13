@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="/assets/style/admin.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <div class="logo-container">
+      <div class="logo">
+        <span class="text-head">The Garden Of Eden</span></a>
+      </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><span class="nav-1">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="nav-1">Products</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="nav-1">About US</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="nav-1">Contact US</span></a>
+          </li>
+      </div>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main>
+        <div class="heading">
+            <h1 class="h-1">Admin userface</h1>
+        </div>
+    </main>
+    <main class="buttons">
+        <button type="button" class="btn btn-dark">Sort</button>
+        <button type="button" class="btn btn-dark">Add new item</button>
+    </main>
+    <main>
+        <table class="table table-dark table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+                <th scope="col">Edit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Grass Cutter</td>
+                <td><img src="https://i.postimg.cc/x8qVDK94/wallpaperflare-com-wallpaper-4-2.jpg" class="table-img"></td>
+                <td>600</td>
+                <td><button type="button" class="btn btn-light" id="edit">Edit</button>
+                <button type="button" class="btn btn-light">Remove</button>
+                </td>
+
+              </tr>
+              
+            </tbody>
+          </table>
+    </main>
+    
+    <script src="/assets/JS/admin.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://kit.fontawesome.com/95273b878a.js" crossorigin="anonymous"></script>
+</body>
+</html>
