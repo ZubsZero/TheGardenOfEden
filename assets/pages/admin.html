@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
-    <link rel="stylesheet" href="/assets/style/products.css">
+    <link rel="stylesheet" href="/assets/style/admin.css">
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -54,86 +54,49 @@
           <li class="nav-item">
             <a class="nav-link" href="#"><span class="nav-1">Contact US</span></a>
           </li>
-          <li class="btn-cart">
-            <label for="cart">Cart</label>
-            <button type="button" class="cart" id="cart" onclick="toggle()">.</button>
-          </li>
-        </ul>
-        <div class="cart-container" id="cartcontainer">
-          <div class="heading">
-            <p></p>
-          </div>
-          <div class="cart-items">
-            <div class="product-img">
-              <img src="https://i.postimg.cc/c1bFmSGM/gardening-service-removebg-preview.png" alt="" class="cart-images">
-            </div>
-            <p>Large Scissor</p>
-            <p>300</p>
-            <div class="units">
-             <span>-</span>
-            <p>1</p>
-            <span>+</span>
-            </div>
-            <button type="button" class="btn btn-danger" onclick="remove()">x</button>
-          </div>
-        </div>
       </div>
     </div>
   </div>
 </nav>
     </header>
     <main>
-        <div class="container">
-            <h1 class="h-1">Our Services & Products</h1>
-            <hr class="line">
+        <div class="heading">
+            <h1 class="h-1">Admin userface</h1>
         </div>
     </main>
-    <main>
-        <div class="cards">
-            <div class="card">
-                <div class="card-content">
-                    Gardening Tools
-                </div>
-            </div>
-            <div class="card-2">
-                <div class="card-content">
-                    Gardening Decor
-                </div>
-            </div>
-            <div class="card-3">
-                <div class="card-content">
-                    Gardening Service
-                </div>
-            </div>
-        </div>
+    <main class="buttons">
+        <button type="button" class="btn btn-dark">Sort</button>
+        <button type="button" class="btn btn-dark">Add new item</button>
     </main>
     <main>
-     <div class="main">
-      <div class="cards-2">
-        <div class="card-4">
-          <div class="card-body">
-              <div class="card-img-actions">
-                      <img src="https://i.postimg.cc/8zKm67Bg/Untitled-design-removebg-preview.png" class="card-img img-fluid" width="96" height="350" alt="">
-              </div>
-          </div>
-          <div class="card-body bg-dark text-center">
-              <div class="mb-2">
-                  <h6 class="font-weight-semibold mb-2">
-                      <h6 class="text-light">${data.name}</h6>
-                  </h6>
-              </div>
-              <h3 class="mb-0 font-weight-semibold text-light" >${data.price}</h3>
-              <button type="button" class="btn bg-cart" onclick="addtocart()"><i class="fa fa-cart-plus mr-2"></i> Add to cart</button>
-          </div>
-      </div>
-</div>
-      </div>
-     </div>
+        <table class="table table-dark table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+                <th scope="col">Edit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Grass Cutter</td>
+                <td><img src="https://i.postimg.cc/x8qVDK94/wallpaperflare-com-wallpaper-4-2.jpg" class="table-img"></td>
+                <td>600</td>
+                <td><button type="button" class="btn btn-light" id="edit">Edit</button>
+                <button type="button" class="btn btn-light">Remove</button>
+                </td>
+
+              </tr>
+              
+            </tbody>
+          </table>
     </main>
-    <script src="/assets/JS/products.js"></script>
+    
+    <script src="/assets/JS/admin.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://kit.fontawesome.com/95273b878a.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
