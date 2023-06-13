@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   
 }
 .text-head {
     color: rgb(255, 255, 255);
@@ -28,15 +29,22 @@
 }
 
 body {
-    background-color: black !important;
+ background-color: black !important;
 }
 
 .hero {
-    background-color: rgba(0, 128, 0, 0);
     height: 20rem;
     border-bottom-right-radius: 4rem;
     border-top-left-radius: 4rem;
     border: 0.1px solid green;
+    background-image: url(https://i.postimg.cc/RhLwvNHP/Green-Flower-i-Pad-Wallpaper-Download-i-Phone-Wallpapers-i-Pad-1.jpg);
+    background-position: center;
+    background-size: cover;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(246, 0, 0, 0);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(32, 255, 0, 0.3);
 }
 
 .hero-content {
@@ -48,16 +56,17 @@ body {
 .h-1 {
     margin-top: 7.5rem;
     font-size: 5rem;
+    font-weight: 700;
     background: url('https://i.postimg.cc/x8qVDK94/wallpaperflare-com-wallpaper-4-2.jpg') no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px green ;
+    -webkit-text-stroke: 0.1px rgb(255, 255, 255) ;
 }
 
 
 
 label{
-    color: green;
+    color: rgb(8, 165, 5);
 }
 
 section {
@@ -79,7 +88,7 @@ margin-left: 5rem;
     background: none;
     background-color: transparent;
     border: none;
-    color: green;
+    color: rgb(3, 130, 7);
     box-shadow: 1px 1px 10px 2px green;
 }
 
@@ -117,3 +126,13 @@ textarea {
     background-color: black !important;
     color: white !important;
 }
+
+footer {
+ background-color: rgb(0, 0, 0);
+
+}
+
+form {
+  height: 29rem;
+}
+
