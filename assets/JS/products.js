@@ -17,37 +17,37 @@
       let products = [
           {
             id: 1,
-            image:"",
-            name: "Zubair",
-            price: 100,
+            image:"https://i.postimg.cc/Bbq2wycw/black-roses.png",
+            name: "Black Rose Seeds",
+            price: 240,
             instock: 100,
           },
           {
             id: 2,
-            image:"",
-            name: "Zubair",
-            price: 100,
+            image:"https://i.postimg.cc/vTRNgQyx/shears.jpg",
+            name: "Stainless Steel Shears",
+            price:400,
             instock: 100,
           },
           {
             id: 3,
-            image:"",
-            name: "Zubair",
-            price: 100,
+            image:"https://i.postimg.cc/brT9y8wh/hosepipe-2.jpg",
+            name: "5m Hosepipe",
+            price: 300,
             instock: 100,
           },
           {
             id: 4,
-            image:"",
-            name: "Zubair",
-            price: 100,
+            image:"https://i.postimg.cc/zGf0fLhP/rose.jpg",
+            name: "Red Rose Seeds",
+            price: 400,
             instock: 100,
           },
           {
             id: 5,
-            image:"",
-            name: "Zubair",
-            price: 100,
+            image:"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRBQ-AykptbpL8f1aajeugNDTKgidZ9MB9ymPCOH8ZSUedKVnDB3L8z-prMtS74DBiiO1HyDmGIlH_OVdf7Do2WzKbbVj0G1K-5Mphw-4bOEWKSsN5C21jpRRrzezNOf60i5uk&usqp=CAc",
+            name: "Garden Compost",
+            price: 500,
             instock: 100,
           },
         ];
@@ -64,7 +64,7 @@
           <div class="card-4">
           <div class="card-body">
               <div class="card-img-actions">
-                      <img src="https://i.postimg.cc/8zKm67Bg/Untitled-design-removebg-preview.png" class="card-img img-fluid" width="96" height="350" alt="">
+                      <img src="${product.image}" class="card-img img-fluid" width="96" height="350" alt="">
               </div>
           </div>
           <div class="card-body bg-dark text-center">
@@ -73,7 +73,7 @@
                       <h6 class="text-light">${product.name}</h6>
                   </h6>
               </div>
-              <h3 class="mb-0 font-weight-semibold text-light" >${product.price}</h3>
+              <h3 class="mb-0 font-weight-semibold text-light" >R${product.price}</h3>
               <button type="button" class="btn bg-cart" onclick="addtocart(${product.id})"><i class="fa fa-cart-plus mr-2"></i> Add to cart</button>
           </div>
       </div>
@@ -122,7 +122,7 @@
           totalItems += item.numberOfUnits;
         });
 
-        subtotalEl.innerHTML = `Subtotal (${totalItems} items): $${totalPrice.toFixed(2)}`;
+        subtotalEl.innerHTML = `Total (${totalItems} products): R${totalPrice.toFixed(2)}`;
       }
 
       // render cart items
@@ -132,10 +132,10 @@
           cartItemsEl.innerHTML += `
           <div class="cart-items">
           <div class="product-img">
-            <img src="https://i.postimg.cc/c1bFmSGM/gardening-service-removebg-preview.png" alt="" class="cart-images">
+            <img src="${item.image}" alt="" class="cart-images">
           </div>
-          <p>Large Scissor</p>
-          <p>300</p>
+          <p>${item.name}</p>
+          <p>${item.price}</p>
           <div class="units">
           <span  onclick="changeNumberOfUnits('minus', ${item.id})">-</span>
           <p>${item.numberOfUnits}</p>
