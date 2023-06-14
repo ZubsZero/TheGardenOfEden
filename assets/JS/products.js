@@ -1,19 +1,6 @@
         const displayproducts = document.querySelector(".main");
       const carttotal = document.querySelector(".price")
-      // / toggle cart
-      var toggled = true;
-      function toggle() {
-          if (!toggled){
-              toggled = true;
-              document.getElementById("cartcontainer").style.display = "none";
-              return;
-          }
-          if(toggled){
-              toggled = false;
-              document.getElementById("cartcontainer").style.display = "block";
-              return;
-          }
-      }
+      
       let products = [
           {
             id: 1,
@@ -174,3 +161,5 @@
 
         updateCart();
       }
+
+  
