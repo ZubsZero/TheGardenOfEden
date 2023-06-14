@@ -93,8 +93,12 @@ body {
     border-radius: 10px ;
     width: 100%;
     background-color: rgb(0, 0, 0) !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-.cards-2 {
+.products {
     display: flex;
     gap: 2rem;
 }
@@ -123,6 +127,8 @@ body {
     box-shadow: green 1px 1px 10px 4px;
 }
 .cart-container {
+    display: flex;
+    flex-direction: column;
     margin-top: 30px;
     background-color: rgb(0, 0, 0);
     width: 100%;
@@ -152,7 +158,7 @@ body {
     width: 12rem;
 }
 .card-4 {
-    width: 20rem;
+    width: 19rem;
     margin: 2rem;
     position: relative;
     display: flex;
@@ -173,9 +179,8 @@ body {
     display: flex;
     gap: 0.5rem
 }
-
 @media only screen and (max-width:300px) {
-    .cards-2 {
+    .products {
         display: flex;
         flex-direction: column;
     }
@@ -185,18 +190,24 @@ body {
     }
     .card-4 {
         width: 15rem;
+        display: flex;
+        flex-direction: column;
     }
     .cart-container {
         width: 12rem;
         
     }
-    .cart-images {
-      
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .cart-items{
+        gap: 1.5rem;
+        margin-left: 5rem;
     }
 }
-
 @media only screen and (max-width: 700px) {
-    .cards-2 {
+    .products {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -210,19 +221,28 @@ body {
     }
     .card-4 {
         width: 15rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
     }
 }
-
 .btn.bg-cart {
     background-color: black !important;
     margin: 1.5rem;
     border: 0.1px solid green;
 }
-
 .btn.bg-cart:hover {
     transition: 300ms all;
     transform: scale(1.2);
     background-color: white !important;
     border: 0.1px solid rgb(0, 0, 0);
 }
-
+.cart-total {
+    color: white;
+}
+.price {
+    color: white;
+}

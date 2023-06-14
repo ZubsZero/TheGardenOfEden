@@ -58,7 +58,7 @@
             <a class="nav-link" href="/assets/pages/admin.html"><span class="nav-1">Admin</span></a>
           </li>
           <li class="btn-cart">
-            <label for="cart">Cart</label>
+            <label for="cart"> Your Cart</label>
             <button type="button" class="cart" id="cart" onclick="toggle()">.</button>
           </li>
         </ul>
@@ -79,6 +79,11 @@
             </div>
             <button type="button" class="btn btn-danger" onclick="remove()">x</button>
           </div>
+         
+          </div>
+       
+         <div class="cart-total">
+          <h4 class="subtotal"></h4>   
         </div>
       </div>
     </div>
@@ -112,31 +117,129 @@
     </main>
     <main>
      <div class="main">
-      <div class="cards-2">
-        <div class="card-4">
-          <div class="card-body">
-              <div class="card-img-actions">
-                      <img src="https://i.postimg.cc/8zKm67Bg/Untitled-design-removebg-preview.png" class="card-img img-fluid" width="96" height="350" alt="">
-              </div>
-          </div>
-          <div class="card-body bg-dark text-center">
-              <div class="mb-2">
-                  <h6 class="font-weight-semibold mb-2">
-                      <h6 class="text-light">${data.name}</h6>
-                  </h6>
-              </div>
-              <h3 class="mb-0 font-weight-semibold text-light" >${data.price}</h3>
-              <button type="button" class="btn bg-cart" onclick="addtocart()"><i class="fa fa-cart-plus mr-2"></i> Add to cart</button>
-          </div>
-      </div>
-</div>
+      <div class="products" id="cards-2">
+    </div>
       </div>
      </div>
     </main>
+    <footer
+          class="text-center text-lg-start text-white"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              The Garden Of Eden
+            </h6>
+            <p>
+              They say life is greener on the other side but make your life greener on our side
+            </p>
+          </div>
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Pages</h6>
+            <p>
+              <a class="text-white">Home</a>
+            </p>
+            <p>
+              <a class="text-white">Products</a>
+            </p>
+            <p>
+              <a class="text-white">About US</a>
+            </p>
+            <p>
+              <a class="text-white">Contact US</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-envelope mr-3"></i> TheGardenOfEden0@gmail.com</p>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+            <!-- Facebook -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #3B5998"
+               href="#!"
+               role="button"
+               ><i class="fab fa-facebook-f"></i
+              ></a>
+            <!-- Twitter -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #55ACEE"
+               href="#!"
+               role="button"
+               ><i class="fab fa-twitter"></i
+              ></a>
+            <!-- Google -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #DD4B39"
+               href="#!"
+               role="button"
+               ><i class="fab fa-google"></i
+              ></a>
+            <!-- Instagram -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #AC2BAC"
+               href="#!"
+               role="button"
+               ><i class="fab fa-instagram"></i
+              ></a>
+            <!-- Linkedin -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #0082CA"
+               href="#!"
+               role="button"
+               ><i class="fab fa-linkedin-in"></i
+              ></a>
+            <!-- Github -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #333333"
+               href="#!"
+               role="button"
+               ><i class="fab fa-github"></i
+              ></a>
+          </div>
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2023 Garden Of Eden
+      <a class="text-white" href="https://mdbootstrap.com/"
+         ></a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
     <script src="/assets/JS/products.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://kit.fontawesome.com/95273b878a.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
