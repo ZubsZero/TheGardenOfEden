@@ -239,6 +239,7 @@ border: 1px solid rgba(135, 204, 11, 0.3);
     background-color: black !important;
     margin: 1.5rem;
     border: 0.1px solid green;
+    color: white;
 }
 .btn.bg-cart:hover {
     transition: 300ms all;
