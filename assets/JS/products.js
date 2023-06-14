@@ -45,9 +45,9 @@
           },
           {
             id: 5,
-            image:"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRBQ-AykptbpL8f1aajeugNDTKgidZ9MB9ymPCOH8ZSUedKVnDB3L8z-prMtS74DBiiO1HyDmGIlH_OVdf7Do2WzKbbVj0G1K-5Mphw-4bOEWKSsN5C21jpRRrzezNOf60i5uk&usqp=CAc",
-            name: "Garden Compost",
-            price: 500,
+            image:"https://i.postimg.cc/7LdtCgrZ/knome.jpg",
+            name: "Garden Knome",
+            price: 1000,
             instock: 100,
           },
         ];
