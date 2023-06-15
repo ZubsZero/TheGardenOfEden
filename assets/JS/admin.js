@@ -12,7 +12,7 @@ function add() {
       } else {
         products.push({
           id: 1,
-          Image: picture.value,
+          picture: picture.value,
           nameProduct: nameProduct.value,
           price: price.value,
         });
@@ -27,13 +27,13 @@ function add() {
 
 function renderProducts() {
     display.innerHTML = "";
-    products.forEach((item) => {
+    products.forEach((product) => {
       display.innerHTML += `
       <tr>
-      <th scope="row">1</th>
-      <td>${item.name}</td>
-      <td><img src="${item.image}" class="table-img"></td>
-      <td>${item.price}</td>
+      <th scope="row">${product.id}</th>
+      <td>${product.name}</td>
+      <td><img src="${product.image}" class="table-img"></td>
+      <td>${product.price}</td>
       <td><button type="button" class="btn btn-success" id="edit">Edit</button>
       <button type="button" class="btn btn-success">Remove</button>
       </td>
@@ -41,6 +41,5 @@ function renderProducts() {
     </tr>
           `;
     });
-    localStorage.getItem("CART");
   }
   renderProducts();
