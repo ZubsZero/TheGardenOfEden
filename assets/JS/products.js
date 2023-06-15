@@ -1,5 +1,8 @@
-        const displayproducts = document.querySelector(".main");
-      const carttotal = document.querySelector(".price")
+      const displayproducts = document.querySelector(".main");
+      const carttotal = document.querySelector(".price");
+      const productsEl = document.querySelector(".products");
+      const cartItemsEl = document.querySelector(".cart-container");
+      const subtotalEl = document.querySelector(".subtotal");
       
       let products = [
           {
@@ -43,11 +46,7 @@
             category: "decor"
           },
         ];
-        
-        // SELECT ELEMENTS
-      const productsEl = document.querySelector(".products");
-      const cartItemsEl = document.querySelector(".cart-container");
-      const subtotalEl = document.querySelector(".subtotal");
+      
 
       // RENDER PRODUCTS
       function renderProducts() {
@@ -83,9 +82,9 @@
         // check if product already exist in cart
         if (cart.some((item) => item.id === id)) {
           changeNumberOfUnits("plus", id);
+          
         } else {
           const item = products.find((product) => product.id === id);
-
           cart.push({
             ...item,
             numberOfUnits: 1,
