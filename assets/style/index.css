@@ -189,6 +189,10 @@ img {
     }
 }
 
+a {
+    text-decoration: none;
+}
+
 
 
 .heading-2 {
