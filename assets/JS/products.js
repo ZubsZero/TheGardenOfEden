@@ -8,6 +8,7 @@
             name: "Black Rose Seeds",
             price: 240,
             instock: 100,
+            category: "flower",
           },
           {
             id: 2,
@@ -15,6 +16,7 @@
             name: "Stainless Steel Shears",
             price:400,
             instock: 100,
+            category: "Equipment",
           },
           {
             id: 3,
@@ -22,6 +24,7 @@
             name: "5m Hosepipe",
             price: 300,
             instock: 100,
+            category: "Equipment",
           },
           {
             id: 4,
@@ -29,6 +32,7 @@
             name: "Red Rose Seeds",
             price: 400,
             instock: 100,
+            category: "flower"
           },
           {
             id: 5,
@@ -36,6 +40,7 @@
             name: "Garden Knome",
             price: 1000,
             instock: 100,
+            category: "decor"
           },
         ];
         
@@ -75,7 +80,7 @@
 
       // adding to the cart
       function addtocart(id) {
-        // check if prodcut already exist in cart
+        // check if product already exist in cart
         if (cart.some((item) => item.id === id)) {
           changeNumberOfUnits("plus", id);
         } else {
@@ -161,5 +166,14 @@
 
         updateCart();
       }
+
+      function sort() {
+        products.reverse();
+        displayproducts.innerHTML = "";
+        renderProducts();
+      }
+
+      
+      
 
   
